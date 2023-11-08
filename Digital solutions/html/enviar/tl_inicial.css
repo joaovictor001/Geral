@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url('https://fonts.googleapis.com/css2?family=Purple+Purse&family=Quicksand:wght@500&display=swap');
+
+#DivLateral{
+    position:relative;
+    width:50%;
+    height: 100%;
+    background-color: #f78798;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: center;
+}
+#DivA{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left:0px;
+    background-color: #EDECEA;
+    flex-flow: row nowrap;
+    
+    
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso ajusta a altura da div para ocupar toda a altura da tela */
+    text-align: center;
+    font-family: "Poppins";
+}
+.foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+h1{
+    font-size: 60px;
+    font-family: "Poppins";
+    color: white;
+}
+p{
+  font-size: 30px;
+  color:white;
+}
+.group{
+  margin-bottom: 60px;
+  display: flex;
+  
+}
+body {
+    background-color: #f78798; 
+  }
+
+
+
+.footer{
+  background:#f78798 ;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  padding: 20px 0;
+  margin-top: 20px;
+  border: black;
+  border-radius: 5px;
+  
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:#fffafb;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:#fffafb;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }

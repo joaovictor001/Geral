@@ -1,0 +1,207 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Menu.css" />
+    
+    <script src="cep.js"></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body style="background-color: #f78798;">
+    <main>
+      <div class="titulo">
+        <ul class="snip1143">
+            <li >
+                <a href="tela_inicial.html" data-hover="Home">Home</a></li>
+                <li ><a href="sobre_nos.html" data-hover="Sobre Nós">Sobre Nós</a></li>
+                <li><a href="tlogin.html" data-hover="Login">Login</a></li>
+                <li><a href="index.html" data-hover="cardapio">cardapio</a></li>
+                <li><a href="contato.html" data-hover="Contato">Contato</a></li>
+              </ul></div>
+    </section>
+      
+      <div class="content">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 120</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 240</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 120</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 240</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 120</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 240</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 120</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 240</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+            <div class="info">
+              <div><span>Sub-total</span><span>R$ 418</span></div>
+              <div><span>Frete</span><span>Gratuito</span></div>
+              <div>
+                <button>
+                  Adicionar cupom de desconto
+                  <i class="bx bx-right-arrow-alt"></i>
+                </button>
+              </div>
+            </div>
+            <footer>
+              <span>Total</span>
+              <span>R$ 418</span>
+            </footer>
+          </div>
+          <button>Finalizar Compra</button>
+        </aside>
+      </div>
+      <section class="cart_container">        
+        <div class="btn_area">
+            <button>Ver Mais Produtos</button>
+            <button class="finalizar">Finalizar</button>
+        </div>
+        <ul class="cart_list">
+        
+        </ul>
+        <div class="qtd_price_area">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="btn_area">
+            <button>Ver Mais Produtos</button>
+            <button class="finalizar">Finalizar</button>
+        </div>
+        </section>
+        <section class="cart_container ">
+            <h2>Endereço de Entrega</h2>
+            <form a method="get" action="." id="address_form">
+              <label>Cep:
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                       onblur="pesquisacep(this.value);" /></label><br />
+                <label>Rua:
+                <input name="rua" type="text" id="rua" size="60" /></label><br />
+                <label>Bairro:
+                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                <label>Cidade:
+                <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                <label>Estado:
+                <input name="uf" type="text" id="uf" size="2" /></label><br />
+                <label>IBGE:
+                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+  
+    
+            </form>
+    
+        </section>
+    </main>
+  <script>
+    meu_callback();
+    limpa_formulário_cep();
+    pesquisacep(valor);
+  </script>
+  </body>
+</html>
