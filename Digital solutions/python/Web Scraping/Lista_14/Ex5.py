@@ -1,15 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
 
-raspagem = requests.get("https://quotes.toscrape.com")
-soup  = BeautifulSoup(raspagem.text, "html.parser")
-print("Albert Einstein \nJ.K. Rowling\nAlbert Einstein \nJane Austen\nMarilyn Monroe\nAlbert Einstein\nAndré Gide\nThomas A. Edison\nEleanor Roosevelt\nSteve Martin")
+autor_escolhido = 'Jane Austen'
+response = requests.get('http://quotes.toscrape.com')
 
-autor_escolhido = input("Qual o autor escolhido: ")
+soup = BeautifulSoup(response.text, 'html.parser')
 
-citacoes = soup.find_all('span', class_="text")
-for c in citacoes:
-    author = c.find_next("small", class_="author")
-    if author and author.get_text() == autor_escolhido:
-        print(c.get_text())
+   
+quotes = soup.find_all('span', class_='text')
+ 
+for quote in quotes:
+    author_tag = quote.find_next('small', class_='author')
+    if author_tag and author_tag.get_text() == autor_escolhido:
+        print(quote.get_text())
+
 

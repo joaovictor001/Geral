@@ -182,7 +182,7 @@ class Jogar:
                     continue
 
         # O Delaeler.pontuacao < 17:r não para de puar car ate que ele fique com 17 ou mais que 17
-        while self.mao_dea
+        while self.mao_dealer:
             self.mao_dealer.pegar_carta(self.baralho)
 
 
