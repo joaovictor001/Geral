@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="Menu.css" />
     
     
-    
+    <script  type="text/javascript" src="qweqwe.js"></script>
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -43,7 +43,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="produto_car">  
+              <tr class="cart_produto">
                 <td>
                   <div class="product">
                     <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
@@ -53,64 +53,20 @@
                     </div>
                   </div>
                 </td>
-                <td >
-                  <span class="preco">$ 121</span>
-                </td>
-                    <td>
-                      <input type="number" value="2" min="0" class="product-qtd-input">
-                    </td>
-                 
-                </td>
-                <td>R$ 240</td>
+                <td class="preco">R$ 121</td>
                 <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                </td>
-              </tr class="produto_car">
-              <tr class="produto_car">
-                <td>
-                  <div class="product">
-                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
-                    <div class="info">
-                      <div class="name">Nome do produto</div>
-                      <div class="category">Categoria</div>
-                    </div>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
                   </div>
-                  <td>
-                    <span class="preco">$ 121</span>
-                  </td>
-                  <td>
-                      <input type="number" value="2" min="0" class="product-qtd-input">
-                    </td>
-                    
-                </td>
-                <td>R$ 243</td>
-                <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                </td>
-              </tr>
-              <tr class="produto_car">
-                <td>
-                  <div class="product">
-                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
-                    <div class="info">
-                      <div class="name">Nome do produto</div>
-                      <div class="category">Categoria</div>
-                    </div>
-                  </div>
-                  <td>
-                    <span class="preco">$ 121</span>
-                  </td>
-                  <td>
-                    <input type="number" value="2" min="0" class="product-qtd-input">
-                  </td>
-               
                 </td>
                 <td>R$ 240</td>
                 <td>
                   <button class="remove"><i class="bx bx-x"></i></button>
                 </td>
               </tr>
-              <tr class="produto_car">
+              <tr>
                 <td>
                   <div class="product">
                     <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
@@ -119,13 +75,60 @@
                       <div class="category">Categoria</div>
                     </div>
                   </div>
-                  <td>
-                    <span class="preco">$ 121</span>
-                  </td>
-                  <td>
-                      <input type="number" value="2" min="0" class="product-qtd-input">
-                    </td>
-                  
+                </td>
+                <td>R$ 122</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 240</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 123</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 240</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 124</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
                 </td>
                 <td>R$ 240</td>
                 <td>
@@ -196,6 +199,10 @@
     
         </section>
     </main>
-    <script  type="text/javascript" src="qweqwe.js"></script>
+  <script>
+    meu_callback();
+    limpa_formulário_cep();
+    pesquisacep(valor);
+  </script>
   </body>
 </html>

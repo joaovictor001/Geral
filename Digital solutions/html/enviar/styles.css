@@ -108,7 +108,14 @@ table tbody tr td {
 .product .info .category {
   color: #666;
 }
-
+.product-qtd-input {
+  width: 48px;
+  height: 34px;
+  border-radius: 6px;
+  border: 2px solid var(--blue);
+  text-align: center;
+  background: #eee;
+}
 .qty {
   background: #eee;
   display: -webkit-inline-box;
@@ -116,10 +123,10 @@ table tbody tr td {
   display: inline-flex;
   padding: 0 0;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 60px;
   border-radius: 20px;
   overflow: hidden;
