@@ -7,6 +7,7 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="style_cardapio.css">
     <link rel="stylesheet" href="Menu.css">
+    <script  type="text/javascript" src="qweqwe.js"></script>
     
 
     
@@ -15,12 +16,13 @@
     <section>
         <div class="titulo">
     <ul class="snip1143">
-        <li     >
+        <li>
             <a href="tela_inicial.html" data-hover="Home">Home</a></li>
             <li ><a href="sobre_nos.html" data-hover="Sobre Nós">Sobre Nós</a></li>
             <li><a href="tlogin.html" data-hover="Login">Login</a></li>
             <li><a href="index.html" data-hover="cardapio">cardapio</a></li>
             <li><a href="contato.html" data-hover="Contato">Contato</a></li>
+            <li><a href="carinho_de_compras.html" data-hover="Carrinho">Carrinho</a></li>
           </ul></div>
 </section>  
         <div class="img_cart">
@@ -28,140 +30,155 @@
         </div>
     <div class="menu">
         <div class="food-items">
-            <img src="cardapio/sem fundo/teste04.png">
+            <img src="cardapio/sem fundo/teste04.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Bombom de Frutas Vermelhas</h5> 
-                    <h5 class="price"> $2,80/unidade </h5>
+                    <h5 class="titulo_doce">Bombom de Frutas Vermelhas</h5> 
+                    <h5 class="price"> R$ 2,80/unidade </h5>
                 </div>
                 <p>Ingredientes: Chocolate ao leite, recheio de geleia de frutas vermelhas.</p>
-                    <a href="produto1.html" class="buttons">Comprar</a>  
+                <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
+                    
             </div>
         </div>
 
         <div class="food-items">
-            <img src="cardapio/sem fundo/teste03.jpg">
+            <img src="cardapio/sem fundo/teste03.jpg"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Chocolate Ao Leite</h5>
+                    <h5 class="titulo_doce">Chocolate Ao Leite</h5>
                     <h5 class="price">R$ 2,50/unidade</h5>
                 </div>
                 <p>Ingredientes: Chocolate ao leite, recheio de ganache.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
 
         <div class="food-items">
-            <img src="cardapio/sem fundo/q.png">
+            <img src="cardapio/sem fundo/q.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Bombom de Chocolate Branco</h5>
+                    <h5 class="titulo_doce">Bombom de Chocolate Branco</h5>
                     <h5 class="price"> R$ 2,50/unidade </h5>
                 </div>
                 <p>Ingredientes: Chocolate branco, recheio de ganache.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
 
         <div class="food-items">
-            <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png">
+            <img src="cardapio/sem fundo/Trufa_de_Chocolate_Amargo-removebg-preview.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Trufa de Chocolate Amargo </h5>
+                    <h5 class="titulo_doce">Trufa de Chocolate Amargo </h5>
                     <h5 class="price">R$ 2,80/unidade</h5>
                 </div>
                 <p>Ingredientes: Chocolate amargo, creme de leite, cacau em pó.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
+                 
             </div>
         </div>
 
         <div class="food-items">
-            <img src="cardapio/sem fundo/trufa1-removebg-preview.png">
+            <img src="cardapio/sem fundo/trufa1-removebg-preview.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Trufa de Cappuccino </h5>
+                    <h5 class="titulo_doce">Trufa de Cappuccino </h5>
                     <h5 class="price">R$ 2,80/unidade</h5>
                 </div>
                 <p>Ingredientes: Chocolate ao leite, creme de leite, café em pó, canela</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
 
         <div class="food-items">
-            <img src="cardapio/sem fundo/trufasnutella-removebg-preview.png">
+            <img src="cardapio/sem fundo/trufasnutella-removebg-preview.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Trufa de Nutella </h5>
+                    <h5 class="titulo_doce">Trufa de Nutella </h5>
                     <h5 class="price">R$ 3,00/unidade</h5>
                 </div>
                 <p>Ingredientes: Chocolate ao leite, creme de avelã Nutella, creme de leite.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="food-items">
-            <img src="cardapio/sem fundo/Cookie1-removebg-preview.png">
+            <img src="cardapio/sem fundo/Cookie1-removebg-preview.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Cookie de Chocolate com Nozes  </h5>
+                    <h5 class="titulo_doce">Cookie de Chocolate com Nozes  </h5>
                     <h5 class="price">R$ 2,00/unidade </h5>
                 </div>
                 <p>Ingredientes: Farinha de trigo, açúcar, chocolate meio amargo, nozes.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="food-items">
-            <img src="cardapio/sem fundo/teste.png">
+            <img src="cardapio/sem fundo/teste.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Cookie de Aveia e Passas</h5>
+                    <h5 class="titulo_doce">Cookie de Aveia e Passas</h5>
                     <h5 class="price">R$ 2,00/unidade</h5>
                 </div>
                 <p>Ingredientes: Farinha de trigo, açúcar, aveia, passas.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="food-items">
-            <img src="cardapio/sem fundo/Torta1-removebg-preview.png">
+            <img src="cardapio/sem fundo/Torta1-removebg-preview.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Torta de Chocolate com Ganache  </h5>
+                    <h5 class="titulo_doce">Torta de Chocolate com Ganache  </h5>
                     <h5 class="price">R$ 3,50/porção</h5>
                 </div>
                 <p>Ingredientes: Massa de chocolate, recheio de ganache, cobertura de chocolate.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="food-items">
-            <img src="cardapio/sem fundo/cheesemorango.png">
+            <img src="cardapio/sem fundo/cheesemorango.png"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Cheesecake de Morango</h5>
+                    <h5 class="titulo_doce">Cheesecake de Morango</h5>
                     <h5 class="price">R$ 3,50/porção</h5>
                 </div>
                 <p> Ingredientes: Massa de biscoito, recheio de cheesecake, cobertura de morango.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="food-items">
-            <img src="cardapio/sem fundo/cheesecake-de-oreo-9.jpg">
+            <img src="cardapio/sem fundo/cheesecake-de-oreo-9.jpg"alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Cheesecake de Oreo</h5>
+                    <h5 class="titulo_doce">Cheesecake de Oreo</h5>
                     <h5 class="price">R$ 3,50/porção</h5>
                 </div>
                 <p> Ingredientes: Massa de biscoito, recheio de cheesecake com pedaços de Oreo.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="food-items">
-            <img src="cardapio/sem fundo/quindim-removebg-preview.png">
+            <img src="cardapio/sem fundo/quindim-removebg-preview.png" alt="Doce" class="Imagem_doce">
             <div class="details">
                 <div class="details-sub">
-                    <h5>Quindim Quindim Tradicional</h5>
+                    <h5 class="titulo_doce">Quindim Quindim Tradicional</h5>
                     <h5 class="price">R$ 2,00/unidade </h5>
                 </div>
                 <p>Ingredientes: Gemas, açúcar, coco ralado.</p>
                 <a href="produto1.html" class="buttons">Comprar</a> 
+                <button class="botao_para_adicionar" onclick="Adicionar_ao_carrinho(event)">Adicionar ao Carrinho</button>
+                
             </div>
         </div>
         

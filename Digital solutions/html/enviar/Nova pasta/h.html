@@ -1,99 +1,88 @@
-<html>
-    <head>
-    <title>ViaCEP Webservice</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <!-- Adicionando Javascript -->
-    <script>
-    
-    function limpa_formulário_cep() {
-            //Limpa valores do formulário de cep.
-            document.getElementById('rua').value=("");
-            document.getElementById('bairro').value=("");
-            document.getElementById('cidade').value=("");
-            document.getElementById('uf').value=("");
-            document.getElementById('ibge').value=("");
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Menu do Paraíso</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-    function meu_callback(conteudo) {
-        if (!("erro" in conteudo)) {
-            //Atualiza os campos com os valores.
-            document.getElementById('rua').value=(conteudo.logradouro);
-            document.getElementById('bairro').value=(conteudo.bairro);
-            document.getElementById('cidade').value=(conteudo.localidade);
-            document.getElementById('uf').value=(conteudo.uf);
-            document.getElementById('ibge').value=(conteudo.ibge);
-        } //end if.
-        else {
-            //CEP não Encontrado.
-            limpa_formulário_cep();
-            alert("CEP não encontrado.");
-        }
+    header {
+      background-color: #ff7a7a;
+      padding: 20px;
+      text-align: center;
     }
-        
-    function pesquisacep(valor) {
 
-        //Nova variável "cep" somente com dígitos.
-        var cep = valor.replace(/\D/g, '');
+    h2 {
+      color: white;
+      margin: 0;
+    }
 
-        //Verifica se campo cep possui valor informado.
-        if (cep != "") {
+    main {
+      padding: 20px;
+    }
 
-            //Expressão regular para validar o CEP.
-            var validacep = /^[0-9]{8}$/;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-            //Valida o formato do CEP.
-            if(validacep.test(cep)) {
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
 
-                //Preenche os campos com "..." enquanto consulta webservice.
-                document.getElementById('rua').value="...";
-                document.getElementById('bairro').value="...";
-                document.getElementById('cidade').value="...";
-                document.getElementById('uf').value="...";
-                document.getElementById('ibge').value="...";
+    th {
+      background-color: #ff7a7a;
+      color: white;
+    }
 
-                //Cria um elemento javascript.
-                var script = document.createElement('script');
-
-                //Sincroniza com o callback.
-                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
-
-                //Insere script no documento e carrega o conteúdo.
-                document.body.appendChild(script);
-
-            } //end if.
-            else {
-                //cep é inválido.
-                limpa_formulário_cep();
-                alert("Formato de CEP inválido.");
-            }
-        } //end if.
-        else {
-            //cep sem valor, limpa formulário.
-            limpa_formulário_cep();
-        }
-    };
-
-    </script>
-    </head>
-
-    <body>
-    <!-- Inicio do formulario -->
-      <form method="get" action=".">
-        <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" /></label><br />
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="60" /></label><br />
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" /></label><br />
-        <label>IBGE:
-        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-      </form>
-    </body>
-
-    </html>
+    footer {
+      background-color: #ff7a7a;
+      padding: 20px;
+      text-align: center;
+    }
+ </style>
+</head>
+<body>
+ <header>
+    <h2>Menu do Paraíso</h2>
+ </header>
+ <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Ingredientes</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bombom de frutas Vermelhas</td>
+          <td>Chocolate ao leite, recheio de frutas vermelhas, nozes, leite condensado, corante natural.</td>
+          <td>R$ 35,00</td>
+        </tr>
+        <tr>
+          <td>Mousse de Chocolate Branco</td>
+          <td>Mousse de chocolate branco, geleia de marshmallow, granulado de chocolate, sólido de menta, creme chantilly, frutas cristalizadas, nozes, cobertura de chocolate branco.</td>
+          <td>R$ 35,00</td>
+        </tr>
+        <tr>
+          <td>Pão-de-ló Sabor Chocolate</td>
+          <td>Pão-de-ló recheado com chantilly cream, recheio de chocolate ao leite, frutas cristalizadas, cobertura de chocolate ao leite.</td>
+          <td>R$ 35,00</td>
+        </tr>
+      </tbody>
+    </table>
+ </main>
+ <footer>
+    <p>&copy; 2022 Menu do Paraíso. Todos os direitos reservados.</p>
+ </footer>
+</body>
+</html>
